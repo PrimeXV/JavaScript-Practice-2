@@ -1,0 +1,155 @@
+/* font family */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 60px;
+  border-radius: 10px;
+  background-color: lightskyblue;
+  color: aliceblue;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 10px;
+  font-weight: 500;
+  color: #ffffff62;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.wrapper {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  padding: 30px 0;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  margin-top: 15px;
+  transition: all 0.3s;
+}
+
+.wrapper:hover {
+  box-shadow: none;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.main div {
+  width: 20%;
+  text-align: center;
+}
+
+.main .number {
+  position: relative;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+  color: white;
+}
+
+#identify {
+  color: green;
+}
+
+.main .colon {
+  font-size: 20px;
+  color: white;
+}
+
+.btns {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn:active {
+  box-shadow: none;
+ 
+}
+
+.start:hover {
+  background-color: darkorchid;
+}
+
+.pause:hover {
+background-color: red;
+} 
+
+.reset:hover {
+  background-color: darkkhaki;
+}
+
+@media only screen and (max-width:600px) {
+ .container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0;
+  padding: 0 20px;
+ }
+
+ .content h3 {
+  font-size: 16px;
+ }
+
+ .clock-container {
+  padding: 20px 0;
+ }
+
+ .main div {
+  width: 15%;
+ }
+
+ .main .number {
+  font-size: 50px;
+ }
+
+ .main .colon {
+  font-size: 20px;
+  color: red;
+ }
+}
